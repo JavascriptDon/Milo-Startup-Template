@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Milo - Startup Landing Page</title>
+	<meta name="theme-color" content="#000000" />
+
+	<meta name="description" content="Web site created using HTML, CSS and Javascript." />
+
+	<!--fonts link-->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+	<!--stylesheet link-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!--favicon link-->
+	<link rel="icon" href="./assets/favicon.ico" type="image/x-icon" sizes="32x32">
+</head>
+
+<body>
+
+	<!--nav-->
+
+	<div class="header fade-in one">
+		<a href="/" class="brand-logo">Milo</a>
+		<nav class="navbar">
+			<ul class="nav-menu">
+				<li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+				<li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+				<li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+				<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+			</ul>
+			<div class="hamburger">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+		</nav>
+	</div>
+
+	<!--home-->
+
+	<div id="home" class="banner fade-in two">
+		<h2>The Future of Startups</h2>
+		<p>Join us and take your business to the next level with Milo's innovative solutions</p>
+		<a href="#" class="btn">Get Started</a>
+	</div>
+
+
+	<!--about-->
+
+	<div id="about" class="about fade-in three">
+		<h3>About Us</h3>
+		<p>Milo is a startup that focuses on providing innovative solutions for businesses of all sizes. Our team of
+			experts is dedicated to helping you achieve your goals and take your business to the next level. With our
+			extensive experience in product development, market research, branding, and web and mobile app development,
+			we are here to help you succeed. Contact us today to learn more.</p>
+	</div>
+
+
+	<!--services-->
+
+	<div id="services" class="services fade-in four">
+		<h3>Our Services</h3>
+		<ul>
+			<li>Product Development</li>
+			<li>Market Research</li>
+			<li>Branding</li>
+			<li>UI/UX Design</li>
+			<li>Web Development</li>
+			<li>Mobile App Development</li>
+		</ul>
+	</div>
+
+
+	<!--contact-->
+
+	<div id="contact" class="contact fade-in five">
+		<h3>Contact Us</h3>
+		<form>
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" required>
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" required>
+			<label for="message">Message</label>
+			<textarea id="message" name="message" required></textarea>
+			<input type="submit" value="Send">
+		</form>
+	</div>
+
+	<!--footer-->
+
+	<div class="footer fade-in five">
+		<p>&copy; 2023 Milo - The Future of Startups</p>
+	</div>
+
+</body>
+
+<script src="./script.js"></script>
+
+</html>

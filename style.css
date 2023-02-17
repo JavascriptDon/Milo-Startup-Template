@@ -1,0 +1,342 @@
+/* Define Keyframes */
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1;
+  /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 1.4s;
+  -moz-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 1.8s;
+  -moz-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+
+.fade-in.four {
+  -webkit-animation-delay: 2.2s;
+  -moz-animation-delay: 2.2s;
+  animation-delay: 2.2s;
+}
+
+.fade-in.five {
+  -webkit-animation-delay: 2.6s;
+  -moz-animation-delay: 2.6s;
+  animation-delay: 2.6s;
+}
+
+
+.fade-in.six {
+  -webkit-animation-delay: 3.0s;
+  -moz-animation-delay: 3.0s;
+  animation-delay: 3.0s;
+}
+
+:root {
+  --nav-clr: #1e1e1e;
+  --nav-highlight: #18bc9ce6;
+
+  --btn-clr: #f5c518;
+  --btn-txt: #1e1e1e;
+  --btn-highlight: #18bc9ce6;
+
+  --services-box-clr: #2c2c2c;
+  --services-txt: #fff;
+  --services-highlight: #18bc9ce6;
+
+  --contact-box-clr: #2c2c2c;
+  --contact-txt: #fff;
+
+  --footer-clr: #2c2c2c;
+  --footer-txt: #fff;
+
+  --bg-white: #fff;
+
+
+}
+
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+a {
+  color: var(--nav-clr);
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--nav-highlight);
+}
+
+
+/* Header Styles */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0 1rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+
+/* Banner Styles */
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  background-image: url('https://cdn.pixabay.com/photo/2017/06/23/12/24/cyber-2436771_1280.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.banner h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.banner p {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.btn {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: var(--btn-clr);
+  color: var(--btn-txt);
+  border-radius: 20px;
+}
+
+.btn:hover {
+  color: var(--btn-highlight);
+}
+
+/* Services Styles */
+
+.services {
+  padding: 50px;
+}
+
+.services h3 {
+  padding-bottom: 10px;
+}
+
+.services ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services li {
+  margin: 10px;
+  padding: 20px;
+  background-color: var(--services-box-clr);
+  color: var(--services-txt);
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.services li:hover {
+  color: var(--services-highlight);
+}
+
+/* About Styles */
+
+.about {
+  padding: 50px;
+}
+
+.about h3 {
+  padding-bottom: 10px;
+}
+
+/* Contact Styles */
+
+.contact {
+  padding: 50px;
+}
+
+.contact h3 {
+  padding-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+label {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: var(--contact-box-clr);
+  color: var(--contact-txt);
+  border: none;
+}
+
+input[type="submit"] {
+  font-weight: 700;
+  background-color: var(--btn-clr);
+  color: var(--btn-txt);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  color: var(--btn-highlight);
+}
+
+/* Footer Styles */
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--footer-clr);
+  color: var(--footer-txt);
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    position: absolute;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow:
+      0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+}
