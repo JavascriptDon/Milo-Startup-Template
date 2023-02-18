@@ -173,6 +173,10 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  left: 0;
+  right: 0;
+  margin: 1.4rem;
+  border-radius: 5px;
 }
 
 .nav-item {
